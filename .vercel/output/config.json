@@ -1,0 +1,75 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "^/_server-islands/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/loading/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/robots\\.txt/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/catalog/package(?:/(.*?))?/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/catalog/pagination/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/catalog(?:/(.*?))?/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/games/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/settings/appearance/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/settings/credits/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/settings/misc/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/settings/pr/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/settings/tab/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		}
+	]
+}

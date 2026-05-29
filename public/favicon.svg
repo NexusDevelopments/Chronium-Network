@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="chronium-favicon-title">
+  <title id="chronium-favicon-title">Chronium</title>
+  <rect width="256" height="256" rx="56" fill="#000000" />
+  <path
+    d="M170 83c-11-9-24-14-42-14-33 0-59 26-59 59s26 59 59 59c17 0 31-5 42-14"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <path d="M144 108l38 20-38 20" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

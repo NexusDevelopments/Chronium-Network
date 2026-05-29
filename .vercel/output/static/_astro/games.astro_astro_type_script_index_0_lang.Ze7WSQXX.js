@@ -1,0 +1,1 @@
+import{E as t}from"./events.tQB_qcWR.js";import{E as e}from"./index.BDGy3wOt.js";const a=async()=>{const t=e.select([{type:"id",val:"chango"}]);e.exists(await t.next()).src=`${__uv$config.prefix}${__uv$config.encodeUrl("https://radon.games/games")}`};new t({events:{"astro:page-load":a},logging:!1}).bind();

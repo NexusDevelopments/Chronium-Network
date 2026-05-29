@@ -1,0 +1,1 @@
+class r{#t;constructor(t){this.#t=t}#e(t,e,n){if(t.logging)return document.addEventListener(e,async()=>await n());document.addEventListener(e,async()=>{try{await n()}catch{}})}bind(){const t=Object.entries(this.#t.events);if(!t||t.length===0)throw new Error("No events added!");t.map(e=>{this.#e(this.#t,e[0],e[1])})}}export{r as E};

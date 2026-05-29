@@ -1,0 +1,32 @@
+services:
+  chronium:
+    image: motortruck1221/chronium:latest
+    container_name: chronium
+    build: .
+    restart: unless-stopped
+    ports:
+      # HOST:CONTAINER (DO NOT CHANGE THE CONTAINER PORT, UNLESS EDITED IN THE config.toml FILE)
+      - 8080:8080
+    volumes:
+      - ./config.toml:/app/config.toml
+  chronium-2:
+    image: motortruck1221/chronium:1.0.0
+    container_name: chronium
+    build: .
+    restart: unless-stopped
+    ports:
+      # HOST:CONTAINER (DO NOT CHANGE THE CONTAINER PORT, UNLESS EDITED IN THE config.toml FILE)
+      - 8080:8080
+    volumes:
+      - ./config.toml:/app/config.toml
+
+# Uncomment the the below stuff to use POSTGRES!
+#  db:
+#    image: postgres
+#    restart: unless-stopped
+#    environment:
+#      POSTGRES_PASSWORD: password #CHANGE THIS
+#      POSTGRES_USER: username
+#      POSTGRES_DB: db
+#    volumes:
+#      - ./db:/var/lib/postgresql/data
