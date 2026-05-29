@@ -4,6 +4,7 @@ server/*.js
 
 # generated types
 .astro/
+.vercel/
 
 # dependencies
 node_modules/

@@ -1,1 +1,0 @@
-import{E as n}from"./events.tQB_qcWR.js";import"./router.2W7FzLmj.js";function o(){try{return window.self!==window.top}catch{return!0}}const i=new n({events:{DOMContentLoaded:()=>{o()||console.log("Assuming request isn't coming from iframe. Redirecting...")}},logging:!1});i.bind();

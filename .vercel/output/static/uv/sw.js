@@ -1,1 +1,0 @@
-importScripts("uv.bundle.js"),importScripts("uv.config.js"),importScripts(__uv$config.sw||"uv.sw.js");const uv=new UVServiceWorker;async function handleRequest(e){return uv.route(e)?await uv.fetch(e):await fetch(e.request)}self.addEventListener("fetch",(e=>{e.respondWith(handleRequest(e))}));
